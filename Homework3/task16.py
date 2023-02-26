@@ -7,7 +7,7 @@
 #     3
 #     -> 1
 print('Введите список через пробел:')
-massA = [int(i) for i in input().split()] #заполним список
+massA = [int(i) for i in input().split()]
 print('Введите число, количество вхождений которого нужно подсчитать:')
 num = int(input())  
 print(f'Число {num} встречается {massA.count(num)} раз')

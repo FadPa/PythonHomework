@@ -12,8 +12,8 @@
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
 
-def printOperationTable(f, h = 6, w = 6):
-  for i in range(1, h+1):
-    print(*(f(i, k) for k in range(1, w+1)))
+def printOperationTable(operation, num_rows=6, num_columns=6):
+  for i in range(1, num_rows+1):
+    print(*(operation(i, k) for k in range(1, num_columns+1)))
 
 printOperationTable(lambda x, y: x * y) 
